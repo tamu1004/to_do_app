@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <div class="todolist ">
+            <h1>To do リスト</h1>
+            <div id="todo">
+            <input type="text"  id="txt">
+            <button id="addButton">追加</button>
+            <button id="deleteButton">消去</button>
+            <button id="addList" onclick="opencontents()">+</button>
+            <button id="openlist" onclick="openedlist()">＋</button>
+        </div>
+        <ul id="textList"></ul>
+        <div id="remove-content">
+            <div class="createList hidden" id="hidden-content">
+                <p>新しいリスト</p>
+                <div class="ok">
+                  <input type="text" id="newlist" placeholder="リスト名">
+                  <div class="ccbutton">
+                     <button class="cancel"  id="closebutton" onclick="closecontents()">キャンセル</button>
+                     <button class="create" id="addlistname" onclick="createname()">作成</button>
+                  </div>  
+                </div>
+            </div>
+        </div>
+        <div id="viewlist" class="viewinglist hidden">
+            <p>作成されたリスト</p>
+            <div id="watchlist">
+                <button class="watch" onclick="closewatch()">閉じる</button>
+            </div>
+        </div>
+        <div id="addcreate-content">
+            <div class="createList hidden" id="hidden-content">
+                <p>新しいリスト</p>
+                <div class="ok">
+                  <input type="text" id="new" placeholder="リスト名">
+                  <div class="ccbtton">
+                     <button class="cacel"  id="closbutton" onclick="closecontents()">追加</button>
+                     <button class="ceate" id="addlitname" onclick="createname()">作成</button>
+                  </div>  
+                </div>
+            </div>
+        </div>
+    
+    
+    <script src="script.js"></script>
+</body>
+</html>
