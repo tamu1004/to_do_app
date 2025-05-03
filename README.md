@@ -29,3 +29,28 @@
 ### 4. Dev Containers でフォルダを開く
 
 - VS Codeで Ctrl + Shit + P を押して検索欄に Dev Containers: Reopen in Container を入力して実行する
+
+# アプリケーションサーバー立ち上げ
+
+## 1. 依存関係の解消
+ターミナルで
+
+```javascript
+npm install
+```
+
+を実行する
+
+## 2. アプリケーションサーバー起動
+ターミナルで
+
+```javascript
+node server.js
+```
+
+を実行する
+
+## 3. 動作確認
+ブラウザで http://localhost:8000 にアクセスし、画面が表示されることを確認
+
+ブラウザで http://localhost:8000/db/test にアクセスし [{"id":1,"username":"Akamatu"}] が表示されることを確認

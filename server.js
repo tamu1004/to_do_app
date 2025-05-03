@@ -17,7 +17,7 @@ const pool = new Pool({
 app.use(express.static('todo_list'));
 
 // /api/test エンドポイントで test テーブルの全データを返す
-app.get('/api/test', async (req, res) => {
+app.get('/db/test', async (req, res) => {
   try {
     const result = await pool.query('SELECT * FROM test');
     res.json(result.rows);
